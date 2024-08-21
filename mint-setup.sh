@@ -94,7 +94,7 @@ git clone --bare https://github.com/juliokochhann/dotfiles.git $HOME/.dotfiles
 dotfiles checkout -f --quiet
 dotfiles config status.showUntrackedFiles no
 
-mkdir -p $HOME/Aplicativos $HOME/Arduino $HOME/Projetos
+mkdir -p $HOME/Aplicativos $HOME/Arduino "$HOME/Maker Center" $HOME/Projetos
 
 # ------------------------------------------------------------------------------
 
@@ -111,7 +111,7 @@ f='gcm-linux.deb'
 
 curl -L --silent -o $f "$url"
 sudo dpkg -i $f
-git-credential-manager configure
+# git-credential-manager configure
 
 # Install Emby server
 repo='MediaBrowser/Emby.Releases'
